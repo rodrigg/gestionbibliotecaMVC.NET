@@ -19,7 +19,7 @@ namespace gestionbibliotecaMVC.DAL
             SqlConnection con = new SqlConnection();
             try
             {
-                con.Open();
+                con.Open();  
                 SqlCommand cmd = new SqlCommand("addbook", con);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@codigoLibro", ejemplar.CodigoLibro);
